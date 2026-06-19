@@ -1,0 +1,8 @@
+.env
+secret.txt
+venv/
+.venv/
+__pycache__/
+vectorstore/
+uploads/
+*.pyc
