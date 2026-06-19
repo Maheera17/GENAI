@@ -16,7 +16,7 @@ These are a few examples:
 
 Try some other questions:
 1. Make a checklist
-2. How is this different from other policies
+2. Summarize a specific chapter and highlight important points
 3. Give advantages and disadvantages
 and try others of your choice
 
