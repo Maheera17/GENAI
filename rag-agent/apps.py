@@ -3,6 +3,8 @@ from pydantic import BaseModel
 import shutil
 import os
 import index_pdf
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from rag.retrieve import retrieve_documents, build_bm25
 from rag.llm import ask_llm
@@ -12,6 +14,14 @@ from services.notes_service import generate_notes
 from services.mcq_service import generate_mcqs
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
