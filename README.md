@@ -21,3 +21,10 @@ Try some other questions:
 and try others of your choice
 
 This gives info which is not specified in the pdf , it generates new formats and ways of giving answers based on existing knowledge , we have implemented the GenAI concept to our RAG project beforehand 
+
+
+The UI of our GenAI Research Assistant:
+<img width="1920" height="1080" alt="Screenshot (321)" src="https://github.com/user-attachments/assets/1d9e6dd3-e765-4b98-8591-7e4f3bb71fd9" />
+<img width="1920" height="1080" alt="Screenshot (320)" src="https://github.com/user-attachments/assets/31f67bca-0a49-4a43-ad59-8a84c0b5dbee" />
+
+
