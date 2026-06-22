@@ -4,19 +4,20 @@ from rag.ingest import (
     save_to_vector_db
 )
 
-filepath = "uploads/sample-insurance-policy.pdf"
 
-print("Loading PDF...")
-docs = load_pdf(filepath)
+def index_pdf(filepath):
 
-print("Splitting document...")
-chunks = split_documents(docs)
+    print("Loading PDF...")
+    docs = load_pdf(filepath)
 
-def return_chunks():
-  return chunks
+    print("Splitting document...")
+    chunks = split_documents(docs)
 
-print("Creating vector database...")
-save_to_vector_db(chunks)
+    print("Creating vector database...")
+    save_to_vector_db(chunks)
 
-print("PDF indexed successfully!")
+    print("PDF indexed successfully!")
+
+    return chunks
+
 
